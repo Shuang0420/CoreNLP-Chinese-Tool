@@ -1,0 +1,16 @@
+#!/bin/bash
+
+class_path=$1
+server_class=$2
+property_file=$3
+port=$4
+timeout=$5
+
+cd $class_path
+
+for file in `find $class_path -name "*.jar"`;
+do
+    export CLASSPATH="$CLASSPATH:`realpath $file`";
+done
+
+java -Xmx3g -cp "*" $server_class -serverProperties $property_file -port $port -timeout $timeout &
