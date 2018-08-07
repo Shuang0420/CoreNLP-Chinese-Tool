@@ -1,5 +1,14 @@
 # CoreNLP-Chinese-Tool
-Stanford CoreNLP - for Chinese language
+Stanford CoreNLP for Chinese language
+
+# Install
+```
+wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-01-31.zip
+wget http://nlp.stanford.edu/software/stanford-chinese-corenlp-2018-02-27-models.jar
+
+unzip stanford-corenlp-full-2018-01-31.zip
+mv stanford-chinese-corenlp-2018-02-27-models.jar stanford-corenlp-full-2018-01-31/
+```
 
 # Comments
 High precision but not robust enough.
